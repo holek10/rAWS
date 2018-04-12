@@ -1,9 +1,9 @@
-emr.add.instance.groups <- function (cluster.id=NULL,instance.groups <value> <value>...=NULL) {
-    cmd <- paste("aws emr add-instance-groups",
-                 ifelse(!is.null(cluster.id),paste("--cluster-id",cluster.id),""),
-                 ifelse(!is.null(instance.groups <value> <value>...),paste("--instance-groups <value> <value>...",instance.groups <value> <value>...),""))
-    system(cmd,intern=TRUE) 
-}
+#emr.add.instance.groups <- function (cluster.id=NULL,instance.groups <value> <value>...=NULL) {
+#    cmd <- paste("aws emr add-instance-groups",
+#                 ifelse(!is.null(cluster.id),paste("--cluster-id",cluster.id),""),
+#                 ifelse(!is.null(instance.groups <value> <value>...),paste("--instance-groups <value> <value>...",instance.groups <value> <value>...),""))
+#    system(cmd,intern=TRUE) 
+#}
 emr.add.steps <- function (cluster.id=NULL,steps <value> <value>...=NULL) {
     cmd <- paste("aws emr add-steps",
                  ifelse(!is.null(cluster.id),paste("--cluster-id",cluster.id),""),
